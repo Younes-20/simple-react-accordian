@@ -1,0 +1,109 @@
+:root{
+  --primary :  	#008080;
+  --secondary: #000;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --clr-grey-special: #eae6eb;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+ background: var(--primary);
+ padding: 0;
+ margin: 0;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.App{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h2, h4{
+  margin: 0;
+  line-height: 1.3em; 
+  text-transform: capitalize;
+
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 1em;
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.4em;
+  color: var(--secondary);
+  font-weight: normal;
+}
+main {
+  margin: 5rem auto;
+  background: #ffff;
+  width: 700px;
+   border-radius: 10px;
+   box-shadow: var(--dark-shadow);
+   padding: 2em 2em;
+}
+
+article{
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-grey-special);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article p {
+  font-size: 1.2em;
+  color: #333;
+ 
+}
+
+button{
+  background: var(--clr-grey-special);
+  color: var(--primary);
+  height: 2.9rem;
+  width: 2.9rem;
+  border-radius: 50%;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: var(--light-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+@media (max-width: 700px){
+  main {
+  
+    width: 480px;
+  
+  }
+  h2 {
+    font-size: 1.5em;
+
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    color: var(--secondary);
+    font-weight: normal;
+  }
+}
